@@ -309,15 +309,15 @@ namespace Assignment_1
                     n4 = n4 - b;
 
                     //now we check if remaining stones(n4) are greater than 3.
-                    while (n4 > 3)
+                    while (n4 > 3) //basically while condition is a new chance
                     {
-                        // choose another random variable that is between 1 2 or 3(player 2 chance)
+                        // choose another random variable that is between 1 2 or 3(another chance)
                         int bi = rnd.Next(1, 4);
                         // we add that into list
                         termsList.Add(bi);
                         //we subtract random number(bi) from the remaining stones
                         n4 = n4 - bi;
-                        //while condition is checked again untill stones are less than 3
+                        //while condition is checked again untill stones are less than 3(next chance)
                     }
                     // now we add last remaining stones into the list, after while condition is exhausted
                     termsList.Add(n4);
